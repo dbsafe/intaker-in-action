@@ -1,5 +1,13 @@
 # Using intaker in a Blazor application
 
+### Dependencies
+- .NET 6.0
+- Blazor
+- Intaker - https://github.com/dbsafe/intaker
+- MatBlazor - https://www.matblazor.com/
+- Tabulator - http://tabulator.info/
+- Ace Editor - https://ace.c9.io/
+
 ## Deploying Blazor WebAssembly as a Azure WebApp using Azure CLI
 
 For more information [Azure CLI - az webapp up](https://learn.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az-webapp-up())
