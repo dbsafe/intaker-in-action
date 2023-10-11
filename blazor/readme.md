@@ -8,13 +8,17 @@
 - Tabulator - http://tabulator.info/
 - Ace Editor - https://ace.c9.io/
 
-## Deploying Blazor WebAssembly as a Azure WebApp using Azure CLI
+## Deploying Blazor WebAssembly as an Azure WebApp using Azure CLI
 
-For more information [Azure CLI - az webapp up](https://learn.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az-webapp-up())
+For more information 
+
+[Quickstart: Deploy an ASP.NET web app](https://learn.microsoft.com/en-us/azure/app-service/quickstart-dotnetcore?tabs=net70&pivots=development-environment-cli)
+
+[Azure CLI - az webapp up](https://learn.microsoft.com/en-us/cli/azure/webapp?view=azure-cli-latest#az-webapp-up())
 
 **Publishing application and dependencies to a folder for deployment**
 
-Must be executed in the project folder `\FileValidator.Blazor`. Creates the folder ``FileValidator.Blazor\bin\Release\net6.0\publish``
+Must be executed in the project folder `\FileValidator.Blazor`. Creates the folder `FileValidator.Blazor\bin\Release\net6.0\publish`
 ```
 dotnet publish -c Release
 ```
