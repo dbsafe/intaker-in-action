@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileValidator.Function.HttpTrigger", "FileValidator.Function.HttpTrigger\FileValidator.Function.HttpTrigger.csproj", "{633A9376-FBA1-463E-8EA5-7D9422739FFA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D71BE962-063C-48E1-935F-CCA3E9AA115D}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileValidator.Domain", "..\webapi\FileValidator.Domain\FileValidator.Domain.csproj", "{00ED898B-4BC1-4208-A4D1-1BA6B0AACC06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{633A9376-FBA1-463E-8EA5-7D9422739FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{633A9376-FBA1-463E-8EA5-7D9422739FFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{633A9376-FBA1-463E-8EA5-7D9422739FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{633A9376-FBA1-463E-8EA5-7D9422739FFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00ED898B-4BC1-4208-A4D1-1BA6B0AACC06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00ED898B-4BC1-4208-A4D1-1BA6B0AACC06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00ED898B-4BC1-4208-A4D1-1BA6B0AACC06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00ED898B-4BC1-4208-A4D1-1BA6B0AACC06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9BAF6F2-772C-4165-8627-F6ABF1964AE4}
+	EndGlobalSection
+EndGlobal
