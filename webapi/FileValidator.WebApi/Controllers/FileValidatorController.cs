@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FileValidator.WebApi.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/file-validator")]
 [ApiController]
 public class FileValidatorController : ControllerBase
 {
@@ -11,7 +11,7 @@ public class FileValidatorController : ControllerBase
 
     public FileValidatorController(IFileValidatorService fileValidatorService)
     {
-        _fileValidatorService = fileValidatorService;                
+        _fileValidatorService = fileValidatorService;
     }
 
     [HttpPost("validate")]
@@ -65,4 +65,4 @@ public class FileValidatorController : ControllerBase
 
         return true;
     }
-}   
+}

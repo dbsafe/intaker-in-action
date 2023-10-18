@@ -9,9 +9,12 @@ internal class ConsoleApplication
 
     private static readonly string? _currentDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 
-    //private const string URL = "https://localhost:7157";
-    private const string URL = "https://web-app-20231011.azurewebsites.net";
-    private const int COUNT = 1;
+    //private const string URL = "https://localhost:7157"; // local web api
+    //private const string URL = "https://localhost:7207"; // local azure function
+    //private const string URL = "https://web-app-20231017.azurewebsites.net"; // web api in azure
+    private const string URL = "https://func-file-validator-20231018.azurewebsites.net"; // function in azure
+    
+    private const int COUNT = 2;
     private static readonly TimeSpan _interval = TimeSpan.FromSeconds(1);
     private static readonly FilePair[] _filePairs = new FilePair[]
     {

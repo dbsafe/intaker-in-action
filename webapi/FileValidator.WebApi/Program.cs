@@ -4,6 +4,7 @@
 
 using FileValidator.Domain.Contracts;
 using FileValidator.Domain.Services;
+using FileValidator.WebApi;
 using Microsoft.AspNetCore.HttpLogging;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +29,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+app.Logger.LogInformation("Version: {Version}", Helper.GetVersion());
 
 // app.UseHttpLogging();
     

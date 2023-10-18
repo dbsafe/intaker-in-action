@@ -29,9 +29,24 @@ namespace FileValidator.Client
                 specsContent.Headers.ContentType = MediaTypeHeaderValue.Parse("text/xml");
                 form.Add(specsContent, "files", Path.GetFileName(filePair.SpecsFileName));
 
-                var response = _httpClient.PostAsync($"{_url}/api/FileValidator/validate", form).Result;
+                var response = _httpClient.PostAsync($"{_url}/api/file-validator/validate", form).Result;
                 var body = response.Content.ReadAsStringAsync().Result;
-                _logger.LogInformation("Response Body:{NewLine}{body}", Environment.NewLine, body);
+                _logger.LogInformation("validateFile - Response Body:{NewLine}{body}", Environment.NewLine, body);
+                response.EnsureSuccessStatusCode();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error");
+            }
+        }
+
+        public void GetVersion()
+        {
+            try
+            {
+                var response = _httpClient.GetAsync($"{_url}/api/Info").Result;
+                var body = response.Content.ReadAsStringAsync().Result;
+                _logger.LogInformation("GetInfo - Response Body:{NewLine}{body}", Environment.NewLine, body);
                 response.EnsureSuccessStatusCode();
             }
             catch (Exception ex)

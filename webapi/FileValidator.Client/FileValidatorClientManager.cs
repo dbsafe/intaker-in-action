@@ -89,6 +89,7 @@ namespace FileValidator.Client
 
                 while (!token.IsCancellationRequested)
                 {
+                    // client.GetVersion();
                     client.ValidateFile(filePair);
                     Thread.Sleep(_config.Interval);
                 }
